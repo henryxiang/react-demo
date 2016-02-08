@@ -1,19 +1,3 @@
-/***********************************************************************************
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="//fb.me/react-0.14.3.js"></script>
-  <script src="//fb.me/react-dom-0.14.3.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Todo App</title>
-</head>
-<body>
-  <div id="app" />
-</body>
-</html>
-**********************************************************************************/
-
 //// Stateless presentational components ////
 const Counter = ({count, onIncrease, onClear}) => (
   <button onClick={onIncrease} onContextMenu={onClear}>{count}</button>
