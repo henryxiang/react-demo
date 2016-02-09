@@ -4,7 +4,7 @@ const Counter = React.createClass({
     return {count: 0}
   },
 
-  //Rendering component UI
+  // Rendering component UI
   render() {
     return (
       <button 
@@ -15,13 +15,16 @@ const Counter = React.createClass({
     )
   },
 
-  //Callback function to update component state
-  handleClick() {
-    /** To be implemented **/
+  // Callback function to handle click event
+  handleClick(event) {
+    event.preventDefault();
+    this.setState({count: this.state.count+1});
+    console.log(this.state); 
   },
 
+  // Callback function to handle right-click event
   handleRightClick() {
-
+    /** To be implemented **/
   },
 })
 

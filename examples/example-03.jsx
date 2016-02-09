@@ -1,3 +1,4 @@
+// Stateless presentational component
 const Counter = (props) => (
   <button 
     onClick={props.onIncrement}
@@ -6,6 +7,7 @@ const Counter = (props) => (
   </button>
  )
 
+// Stateful container component
 const App = React.createClass({
   getInitialState() {
     return {counters: [0,0]}
@@ -42,7 +44,7 @@ const App = React.createClass({
   },
 })
 
-// Mounting component onto web page
+// Mounting App component onto web page
 ReactDOM.render (
   <App />,
   document.getElementById("app")

@@ -1,23 +1,24 @@
+// Definition of a React component
 const Counter = React.createClass({
   // Component state initializer
   getInitialState() {
     return {count: 0}
   },
 
-  //Rendering component UI
+  // Rendering component UI
   render() {
     return (
       <button onClick={this.handleClick}>{this.state.count}</button>
     )
   },
 
-  //Callback function to update component state
+  // Callback function to handle click event
   handleClick() {
     /** To be implemented **/
   },
 })
 
-// Mounting component onto web page
+// Mounting the component onto web page
 ReactDOM.render (
   <Counter />
   document.getElementById("app")
