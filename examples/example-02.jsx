@@ -30,6 +30,6 @@ const Counter = React.createClass({
 
 // Mounting component onto web page
 ReactDOM.render (
-  <Counter />
+  <Counter />,
   document.getElementById("app")
 )
