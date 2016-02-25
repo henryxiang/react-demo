@@ -15,4 +15,4 @@ The apps are implemented with ECMAScript version 6 (ES6) so ES6/Babel needs to b
 
 The [index.html](index.html) file needs to have a 'div' tag with id of 'app' for the application to mount on.
 
-[Link to Presentation](https://htmlpreview.github.io/?https://github.com/henryxiang/react-demo/blob/master/presentation.html)
+<a href="https://htmlpreview.github.io/?https://github.com/henryxiang/react-demo/blob/master/presentation.html" target="_blank">(Link to presentation)</a>

@@ -203,3 +203,4 @@ Requirements:
 - A click on the Todo component will change its status from 'Active' to 'Finished', or vice versa
 - Right-clicking on a Todo component will delete its represented todo item
 - A Filter component that will show todos based on their status: 'All', 'Active', or 'Finished'
+
