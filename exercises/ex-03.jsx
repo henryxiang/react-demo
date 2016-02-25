@@ -1,11 +1,18 @@
-// Stateless presentational component
-const Counter = (props) => (
-  <button 
-    onClick={props.onIncrement}
-    onContextMenu={props.onClear}>
-      {props.count}
+// Stateless presentational components
+const Counter = ({
+  count,
+  onIncrement,
+  onClear
+}) => (
+  <button onClick={onIncrement} onContextMenu={onClear}>
+    {count}
   </button>
- )
+)
+
+const Summary = ({total}) => (
+  <div>Total: {total}</div>
+)
+
 
 // Stateful container component
 const App = React.createClass({
@@ -19,28 +26,33 @@ const App = React.createClass({
         {
           this.state.counters.map((c,i) => {
             return (
-              <Counter key={i}
-                count={c}
-                onIncrement={this.incrementCounter}
-                onClear={this.resetCounter} />
+              <Counter 
+                key={i} 
+                count={c} 
+                onIncrease={this.increaseCounter.bind(this, i)}
+                onClear={this.resetCounter.bind(this, i)}/>
             )
           })
         }
-        <div>Total: {this.getSum()}</div>
+        <Summary total={this.getSum()} />
+        <div>
+          <button onClick={this.addCounter}>Add Counter</button>
+          <button onClick={this.removeAllCounters}>Remove All</button>
+        </div>
       </div>
-    )
+    ) 
   },
 
-  incrementCounter() {
-    console.log("incrementing...")
+  increaseCounter(i, event) {
+    /* To be implemented */
   },
 
-  resetCounter() {
-    console.log("resetting...");
+  resetCounter(i, event) {
+    /* To be implemented */
   },
   
   getSum() {
-    return this.state.counters.reduce((pv, cv) => (pv + cv), 0);
+    /* To be implemented */
   },
 })
 

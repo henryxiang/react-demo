@@ -19,8 +19,9 @@ controls: true
 --
 ### React JS
 
-* Component not template
-* Composable to build complex UI
+* A JavaScript library to build UI
+* Based on component not template
+* Virtual DOM
 
 --
 ### React Component
@@ -70,27 +71,61 @@ ReactDOM.render (
 ```
 
 --
-### Defining React Component using React.createClass() function
+### Defining React Component using React.createClass() Function
 
 ```
 const Counter = React.createClass({
+  // Declare prop types
   propTypes: {
     initialCount: React.PropTypes.number
   },
 
+  // Component state initializer
   getInitialState() {
-    return {}
+    return {count: this.props.initialCount}
+  },
+
+  // Rendering component UI
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.state.count}
+      </button>
+    )
   }
   
+  ...
+
 })
   
 ```
 
 --
-### Defining React Component by extending React.Component (ES6 way)
+### Defining React Component by extending React.Component (ES6)
 
 ```
-const Counter = () => {
+class Counter extends React.Component {
+   // Declare prop types
+  propTypes: {
+    initialCount: React.PropTypes.number
+  }
+
+  // Constructor function - called only once when class object is instantiated
+  constructor(props) {
+    super(props);
+    this.state =  {count: this.props.initialCount};
+  }
+
+  // Rendering component UI
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.state.count}
+      </button>
+    )
+  }
+  
+  ...
   
 }
 
@@ -100,9 +135,22 @@ const Counter = () => {
 ### Defining React Component using ES6 Stateless Function
 
 ```
-const Counter = () => {
-  
+const Counter = ({count, onIncrement}) => (
+  <button onClick={onIncrement}>
+    {count}
+  </button>
+)
+
+// Callback function to be passed to Counter component
+const handleCounterIncrement = (event) => {
+  // update store.count
+  ...
 }
+
+ReactDOM.render(
+  <Counter count={store.count} onIncrement={handleCounterIncrement} />,
+  mountingElement
+)
 
 ```
 

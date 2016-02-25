@@ -15,7 +15,7 @@ const Counter = React.createClass({
     )
   },
 
-  // Callback function to handle click event
+  // Callback function to handle left-click event
   handleClick(event) {
     event.preventDefault();
     this.setState({count: this.state.count+1});
@@ -23,13 +23,15 @@ const Counter = React.createClass({
   },
 
   // Callback function to handle right-click event
-  handleRightClick() {
-    /** To be implemented **/
+  handleRightClick(event) {
+    event.preventDefault();
+    this.setState({count: 0});
+    console.log(this.state); 
   },
 })
 
 // Mounting component onto web page
 ReactDOM.render (
-  <Counter />,
+  <Counter initialCount={100}/>,
   document.getElementById("app")
 )
