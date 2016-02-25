@@ -30,11 +30,7 @@ controls: true
 * Props
 * Rendering (whenever state or props change)
 * Component life cycle events
-  - component initialize
-  - component render
-  - componentWillMount
-  - componentDidMount
-  - componentWillUnmount
+
 
 --
 ### React Component - <a href="http://jsbin.com/wibepuhoza/edit?html,js,output" target="_blank">An Example</a>
