@@ -406,9 +406,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </section>
   </div>
   <div class="slide hidden" id="slide-5">
-    <section class="slide-content"><h3 id="react-component-an-example">React Component - An Example</h3>
+    <section class="slide-content"><h3 id="react-component-a-href-http-jsbin-com-wibepuhoza-edit-html-js-output-target-_blank-an-example-a-">React Component - <a href="http://jsbin.com/wibepuhoza/edit?html,js,output" target="_blank">An Example</a></h3>
 <pre><code>// Definition of a React component
 const Counter = React.createClass({
+
   // Component state initializer
   getInitialState() {
     return {count: this.props.initialCount}
@@ -423,9 +424,9 @@ const Counter = React.createClass({
     )
   },
 
-  // Callback function to handle left-click event
+  // Callback function to handle Click event
   handleClick(event) {
-    /** To be implemented: increment counter by 1 **/
+    this.setState({count: this.state.count+1})
   },
 })
 
@@ -512,7 +513,58 @@ ReactDOM.render(
 </section>
   </div>
   <div class="slide hidden" id="slide-9">
-    <section class="slide-content"><h3 id="jsbin-the-playground-for-javascript-developer">JsBin - The Playground for JavaScript Developer</h3>
+    <section class="slide-content"><h3 id="react-application-architecture">React Application Architecture</h3>
+<p>Stateless Presentational Components &amp; Stateful Container Component</p>
+<p><img src="react-data-flow.jpg" alt="react-data-flow"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h1 id="exercise-time">Exercise Time</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h3 id="exercise-1">Exercise 1</h3>
+<p>Create a simple tally-counter app with a React component. <a href="http://jsbin.com/cigebonuhi/edit?html,js,output" target="_blank">(JsBin Link)</a></p>
+<p>Requirements:</p>
+<ul>
+<li>The UI of the app is a button that shows the tally count.</li>
+<li>When the button is left-clicked, the count will increment by 1 and the updated count will be shown in the UI.</li>
+<li>When the button is right-clicked, the counter will be reset to 0.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><h3 id="exercise-2">Exercise 2</h3>
+<p>Add a functionality to the prior tally-counter app to allow user to configure initial count. <a href="http://jsbin.com/zujefulipe/edit?html,js,output" target="_blank">(JsBin Link)</a></p>
+<p>Requirements:</p>
+<ul>
+<li>All the requirements of Exercise 1.</li>
+<li>The initial count is configurable by user.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><h3 id="exercise-3">Exercise 3</h3>
+<p>Develop a React app that has a group of counters and calculates the sum of all counters&#39; tally. <a href="http://jsbin.com/qiqogabusu/edit?html,js,output" target="_blank">(JsBin Link)</a></p>
+<p>Requirements:</p>
+<ul>
+<li>A Counter component can be added dynamically to the UI by clicking on a button.</li>
+<li>Another button to allow user to remove all counters.</li>
+<li>Each Counter component can increment and reset its own count independently.</li>
+<li>A Summary component that keeps track of the total of all counters&#39; count.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><h3 id="excercise-4-a-todo-app">Excercise 4 - A Todo App</h3>
+<p><a href="http://jsbin.com/saxiwunefi/edit?html,js,output" target="_blank">(JsBin Link)</a></p>
+<ul>
+<li>An input component to allow user add to todo items</li>
+<li>Show a list of Todo components that represent the todo items</li>
+<li>A click on the Todo component will change its status from &#39;Active&#39; to &#39;Finished&#39;, or vice versa</li>
+<li>Right-clicking on a Todo component will delete its represented todo item</li>
+<li>A Filter component that will show todos based on their status: &#39;All&#39;, &#39;Active&#39;, or &#39;Finished&#39;</li>
+</ul>
 </section>
   </div>
 

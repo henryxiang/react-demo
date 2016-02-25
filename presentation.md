@@ -37,11 +37,12 @@ controls: true
   - componentWillUnmount
 
 --
-### React Component - An Example
+### React Component - <a href="http://jsbin.com/wibepuhoza/edit?html,js,output" target="_blank">An Example</a>
 
 ```
 // Definition of a React component
 const Counter = React.createClass({
+
   // Component state initializer
   getInitialState() {
     return {count: this.props.initialCount}
@@ -56,9 +57,9 @@ const Counter = React.createClass({
     )
   },
 
-  // Callback function to handle left-click event
+  // Callback function to handle Click event
   handleClick(event) {
-    /** To be implemented: increment counter by 1 **/
+    this.setState({count: this.state.count+1})
   },
 })
 
@@ -155,4 +156,56 @@ ReactDOM.render(
 ```
 
 --
-### JsBin - The Playground for JavaScript Developer
+### React Application Architecture
+
+Stateless Presentational Components & Stateful Container Component
+
+![react-data-flow](react-data-flow.jpg)
+
+
+--
+# Exercise Time
+
+
+--
+### Exercise 1 
+
+Create a simple tally-counter app with a React component. <a href="http://jsbin.com/cigebonuhi/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+Requirements:
+- The UI of the app is a button that shows the tally count.
+- When the button is left-clicked, the count will increment by 1 and the updated count will be shown in the UI.
+- When the button is right-clicked, the counter will be reset to 0.
+
+
+--
+### Exercise 2 
+
+Add a functionality to the prior tally-counter app to allow user to configure initial count. <a href="http://jsbin.com/zujefulipe/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+Requirements:
+- All the requirements of Exercise 1.
+- The initial count is configurable by user.
+
+
+--
+### Exercise 3 
+
+Develop a React app that has a group of counters and calculates the sum of all counters' tally. <a href="http://jsbin.com/qiqogabusu/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+Requirements:
+- A Counter component can be added dynamically to the UI by clicking on a button.
+- Another button to allow user to remove all counters.
+- Each Counter component can increment and reset its own count independently.
+- A Summary component that keeps track of the total of all counters' count.
+
+
+--
+### Excercise 4 - A Todo App
+<a href="http://jsbin.com/saxiwunefi/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+- An input component to allow user add to todo items
+- Show a list of Todo components that represent the todo items
+- A click on the Todo component will change its status from 'Active' to 'Finished', or vice versa
+- Right-clicking on a Todo component will delete its represented todo item
+- A Filter component that will show todos based on their status: 'All', 'Active', or 'Finished'

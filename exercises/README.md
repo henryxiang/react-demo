@@ -1,7 +1,8 @@
 ## Learning React JS Exercises
 
 
-### [Exercise 1](http://jsbin.com/cigebonuhi/edit?html,js,output)
+### Exercise 1 
+<a href="http://jsbin.com/cigebonuhi/edit?html,js,output" target="_blank">(JsBin Link)</a>
 
 Create a simple tally-counter app with a React stateful component.
 
@@ -17,7 +18,8 @@ Implementation Hints:
 - Use event.preventDefault() to prevent "event-bubbling".
 
 
-### [Exercise 2](http://jsbin.com/zujefulipe/edit?html,js,output)
+### Exercise 2 
+<a href="http://jsbin.com/zujefulipe/edit?html,js,output" target="_blank">(JsBin Link)</a>
 
 Add a functionality to the prior tally-counter app to allow user to configure initial count.
 
@@ -30,7 +32,8 @@ Implementation Hints:
 - Props values can also be used to initialize component state.
 
 
-### [Exercise 3](http://jsbin.com/qiqogabusu/edit?html,js,output)
+### Exercise 3 
+<a href="http://jsbin.com/qiqogabusu/edit?html,js,output" target="_blank">(JsBin Link)</a>
 
 Develop a React app that has a group of counters and calculates the sum of all counters' tally.
 
@@ -39,6 +42,22 @@ Requirements:
 - Another button to allow user to remove all counters.
 - Each Counter component can increment and reset its own count independently.
 - A Summary component that keeps track of the total of all counters' count.
+
+Implementation Hints:
+- Archetect the app with a bunch of stateless components and one stateful container component which keeps track of application state.
+- Bind application state to stateless components' props.
+- Focus on application state in stead of UI (state change -> props change -> UI re-rendering).
+- Stateless components can use callback functions, which are also bind to its props, to change application state.
+
+### Excercise 4
+<a href="http://jsbin.com/saxiwunefi/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+Develop a Todo app that meets the following requirements:
+- An input component to allow user add to todo items
+- Show a list of Todo components that represent the todo items
+- A click on the Todo component will change its status from 'Active' to 'Finished', or vice versa
+- Right-clicking on a Todo component will delete its represented todo item
+- A Filter component that will show todos based on their status: 'All', 'Active', or 'Finished'
 
 Implementation Hints:
 - Archetect the app with a bunch of stateless components and one stateful container component which keeps track of application state.
