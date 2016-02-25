@@ -158,8 +158,6 @@ ReactDOM.render(
 --
 ### React Application Architecture
 
-Stateless Presentational Components & Stateful Container Component
-
 ![react-data-flow](react-data-flow.jpg)
 
 
