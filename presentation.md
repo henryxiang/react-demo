@@ -1,4 +1,4 @@
-title: Learning React the Fun Way
+title: Learning React
 output: presentation.html
 controls: true
 
