@@ -87,7 +87,7 @@ _.map([4, 8], square);
 _.map([4, 8], function(n) { return n*n; });
 // → [16, 64]
 
-/* Anonymous function ES6 Way */
+/* Anonymous function ES6 way */
 _.map([4, 8], (n) => (n*n));
 // → [16, 64]
 
