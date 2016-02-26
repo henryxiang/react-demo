@@ -204,3 +204,12 @@ Requirements:
 - Right-clicking on a Todo component will delete its represented todo item
 - A Filter component that will show todos based on their status: 'All', 'Active', or 'Finished'
 
+--
+### Excercise 5 - A Knowledge Base App
+<a href="http://jsbin.com/mukofidiha/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+Given a partially finished Kowledge Base application, enhance it by adding the following functionalities:
+- Allow user to create new knowledge base article
+- Allow user to edit an article and save the changes made
+- Allow user to delete an existing article from the knowlege base
+

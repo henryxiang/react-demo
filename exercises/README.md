@@ -65,3 +65,15 @@ Implementation Hints:
 - Focus on application state in stead of UI (state change -> props change -> UI re-rendering).
 - Stateless components can use callback functions, which are also bind to its props, to change application state.
 
+### Excercise 5
+<a href="http://jsbin.com/mukofidiha/edit?html,js,output" target="_blank">(JsBin Link)</a>
+
+Given a partially finished Kowledge Base app, enhance it by adding the following functionality:
+- Allow user to create new knowledge base article
+- Allow user to edit an article and save the changes made
+- Allow user to delete an existing article from the knowlege base
+
+Implementation Hints:
+- Focus on application state in stead of UI (state change -> props change -> UI re-rendering).
+- Utilize the "onChange" event on input elements update the application state with the input values.
+
