@@ -1,10 +1,10 @@
 // Stateless presentational components
 const Counter = ({
   count,
-  onIncrement,
+  onIncrease,
   onClear
 }) => (
-  <button onClick={onIncrement} onContextMenu={onClear}>
+  <button onClick={onIncrease} onContextMenu={onClear}>
     {count}
   </button>
 )
@@ -44,17 +44,31 @@ const App = React.createClass({
   },
 
   increaseCounter(i, event) {
-    const {counters} = this.state;
+    event.preventDefault();
+    let {counters} = this.state;
     counters[i] += 1;
     this.setState({counters: counters});
   },
 
   resetCounter(i, event) {
-    const {counters} = this.state;
-    counters[i] += 1;
+    event.preventDefault();
+    let {counters} = this.state;
+    counters[i] = 0;
     this.setState({counters: counters});
   },
   
+  addCounter(event) {
+    event.preventDefault();
+    let {counters} = this.state;
+    counters.push(0);
+    this.setState({counters: counters});
+  },
+
+  removeAllCounters(event) {
+    event.preventDefault();
+    this.setState({counters: []});
+  },
+
   getSum() {
     const {counters} = this.state;
     var sum = 0;

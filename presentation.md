@@ -185,7 +185,7 @@ Requirements:
 --
 ### Exercise 3 
 
-Develop a React app that has a group of counters and calculates the sum of all counters' tally. <a href="http://jsbin.com/qiqogabusu/edit?html,js,output" target="_blank">(JsBin Link)</a>
+Develop a React app that has a group of counters and calculates the sum of all counters' tally. <a href="http://jsbin.com/gujalameso/edit?html,js,console,output" target="_blank">(JsBin Link)</a>
 
 Requirements:
 - A Counter component can be added dynamically to the UI by clicking on a button.

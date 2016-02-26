@@ -25,7 +25,7 @@ const Counter = React.createClass({
   // Callback function to handle right-click event
   handleRightClick(event) {
     event.preventDefault();
-    this.setState({count: 0});
+    this.setState({count: this.props.initialCount});
     console.log(this.state); 
   },
 })

@@ -33,7 +33,7 @@ Implementation Hints:
 
 
 ### Exercise 3 
-<a href="http://jsbin.com/qiqogabusu/edit?html,js,output" target="_blank">(JsBin Link)</a>
+<a href="http://jsbin.com/gujalameso/edit?html,js,console,output" target="_blank">(JsBin Link)</a>
 
 Develop a React app that has a group of counters and calculates the sum of all counters' tally.
 
