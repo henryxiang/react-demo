@@ -1,11 +1,12 @@
 ## React Demo
 
-The two demo apps are written with JSX and can be run directly in [JsBin](http://jsbin.com) by clicking the App links below.
+The following demo apps are written with JSX and can be run directly in [JsBin](http://jsbin.com) by clicking the App links below.
 
 To the run the apps, the following JavaScript libraries are needed:
 
 - React 0.14.3
-- Lodash 3.0.1 (only required by Todo App)
+- Lodash 3.0.1
+- Twitter Boostrap 3.3.6
 
 The apps are implemented with ECMAScript version 6 (ES6) so ES6/Babel needs to be selected in JsBin. Click the links below to run the apps.
 
