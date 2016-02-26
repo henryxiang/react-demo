@@ -13,7 +13,7 @@ The apps are implemented with ECMAScript version 6 (ES6) so ES6/Babel needs to b
 
 2. <a target="_blank" href="http://jsbin.com/lodoru/edit?html,js,output">Todo App:</a> This is a simple ToDo app with CRUD functionality. A new todo item can be added with a input box. Clicking each todo item will toggle its status. The todo list can be filtered by clicking the buttons at the bottom. Right-clicking on each todo item removes the todo.
 
-2. <a target="_blank" href="http://jsbin.com/dulayiceke/edit?html,js,output">Knowledge Base App:</a> This is a simple Knowledge application which allows user to add articles to knowledge base, to edit and save the changes to existing articles, and to delete articles from knowledge base.
+2. <a target="_blank" href="http://jsbin.com/yakifalage/edit?html,js,output">Knowledge Base App:</a> This is a simple Knowledge application which allows user to add articles to knowledge base, to edit and save the changes to existing articles, and to delete articles from knowledge base.
 
 The [index.html](index.html) file needs to have a 'div' tag with id of 'app' for the application to mount on.
 
