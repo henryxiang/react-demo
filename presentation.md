@@ -114,7 +114,6 @@ _.map([4, 8], (n) => (n*n));
 ```
 // Definition of a React component
 const Counter = React.createClass({
-
   // Component state initializer
   getInitialState() {
     return {count: this.props.initialCount}
