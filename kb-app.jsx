@@ -64,7 +64,7 @@ var ArticleView = React.createClass({
 });
 
 
-var ArticleRow = React.createClass( {
+var ArticleRow = React.createClass({
                    
   onClick: function() {
     this.props.onClick( this.props.article._id );

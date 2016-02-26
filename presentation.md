@@ -13,8 +13,85 @@ controls: true
 
 * JavaScript - What about It?
 * Evolving - ECMAScript 6 (ES6)
+* JavaScript Object (JSON)
 * Functional Programming
 * Async Programming (callback functions)
+
+--
+### JavaScript Object
+
+```
+  state = {
+    title : "Knowledge Base",
+    viewMode : "list",
+    currentArticle : null,
+    articles : [
+      {
+        _id : 1,
+        title : "Article One",
+        body : "Main article body - could be very long",
+        viewCount : 0,
+        articleDate : new Date(),
+        keywords : [ "keyword1", "keyword2", "keyword3" ],
+        isFavorite: true
+      },
+      {
+        _id : 2,
+        title : "Article Two",
+        body : "TWO - Main article body - could be very long",
+        viewCount : 0,
+        articleDate : new Date(),
+        keywords : [ "keyword2" ],
+        isFavorite: false
+      }
+    ]
+  };
+```
+
+--
+### Anonymous Function
+
+```
+var ArticleRow = React.createClass({
+
+  save: function() {
+    ...
+  }
+                   
+  onClick: function() {
+    ...
+    this.save(); // Calling the function referenced by 'save'
+  },
+
+  render: function() {
+    ...
+  }
+
+});
+```
+
+--
+### Functional Programming
+
+```
+function square(n) {
+  return n * n;
+}
+
+/* Pass a function reference as parameter */
+_.map([4, 8], square);
+// → [16, 64]
+
+
+/* Using anonymous function */
+_.map([4, 8], function(n) { return n*n; });
+// → [16, 64]
+
+/* Anonymous function in ES 6 Way */
+_.map([4, 8], (n) => (n*n));
+// → [16, 64]
+
+```
 
 --
 ### React JS
@@ -30,7 +107,6 @@ controls: true
 * Props
 * Rendering (whenever state or props change)
 * Component life cycle events
-
 
 --
 ### React Component - <a href="http://jsbin.com/wibepuhoza/edit?html,js,output" target="_blank">An Example</a>
