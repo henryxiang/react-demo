@@ -19,7 +19,7 @@ Implementation Hints:
 
 
 ### Exercise 2 
-<a href="http://jsbin.com/zujefulipe/edit?html,js,output" target="_blank">(JsBin Link)</a>
+<a href="http://jsbin.com/maboxuyaja/edit?html,js,output" target="_blank">(JsBin Link)</a>
 
 Add a functionality to the prior tally-counter app to allow user to configure initial count.
 

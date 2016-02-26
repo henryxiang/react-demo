@@ -1,3 +1,4 @@
+// Definition of a React component
 const Counter = React.createClass({
   // Component state initializer
   getInitialState() {
@@ -18,24 +19,18 @@ const Counter = React.createClass({
   // Callback function to handle left-click event
   handleClick(event) {
     event.preventDefault();
-    this.setState({count: this.state.count+1});
-    console.log(this.state); 
+    this.setState({count: this.state.count+1})
   },
 
   // Callback function to handle right-click event
   handleRightClick(event) {
     event.preventDefault();
-    this.setState({count: 0});
-    console.log(this.state); 
+    this.setState({count: 0})
   },
 })
 
-// Mounting component onto web page
+// Rendering component onto web page
 ReactDOM.render (
-  <div>
-    <Counter initialCount={0}/>
-    <Counter initialCount={10}/>
-    <Counter initialCount={100}/>
-  </div>,
+  <Counter />,
   document.getElementById("app")
 )

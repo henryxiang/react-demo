@@ -175,7 +175,7 @@ Requirements:
 --
 ### Exercise 2 
 
-Add a functionality to the prior tally-counter app to allow user to configure initial count. <a href="http://jsbin.com/zujefulipe/edit?html,js,output" target="_blank">(JsBin Link)</a>
+Add a functionality to the prior tally-counter app to allow user to configure initial count. <a href="http://jsbin.com/maboxuyaja/edit?html,js,output" target="_blank">(JsBin Link)</a>
 
 Requirements:
 - All the requirements of Exercise 1.

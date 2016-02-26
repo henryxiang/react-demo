@@ -1,7 +1,7 @@
 const Counter = React.createClass({
   // Component state initializer
   getInitialState() {
-    return {count: 0}
+    return {count: this.props.initialCount}
   },
 
   // Rendering component UI
