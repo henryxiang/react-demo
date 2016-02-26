@@ -68,7 +68,7 @@ ReactDOM.render (
 ```
 
 --
-### Defining React Component using React.createClass() Function
+### Defining React Component using React.createClass() Function (ES6)
 
 ```
 const Counter = React.createClass({
