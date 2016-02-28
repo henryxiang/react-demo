@@ -66,7 +66,7 @@ Implementation Hints:
 - Stateless components can use callback functions, which are also bind to its props, to change application state.
 
 ### Excercise 5
-<a href="http://jsbin.com/mukofidiha/edit?html,js,output" target="_blank">(JsBin Link)</a>
+<a href="http://jsbin.com/huzupo/edit?html,js,output" target="_blank">(JsBin Link)</a>
 
 Given a partially finished Kowledge Base app, enhance it by adding the following functionality:
 - Allow user to create new knowledge base article
